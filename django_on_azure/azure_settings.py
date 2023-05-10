@@ -3,7 +3,7 @@ from .settings import *
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['stream-django.azurewebsites.net']
+ALLOWED_HOSTS = ['stream-github.azurewebsites.net']
 
 STATICFILES_STORAGE = 'storages.backends.azure_storage.AzureStorage'
 AZURE_ACCOUNT_NAME = os.getenv('AZ_STORAGE_ACCOUNT_NAME')
