@@ -1,9 +1,6 @@
 asgiref==3.5.2
 autopep8==1.7.0
-azure-common==1.1.28
 azure-core==1.26.4
-azure-mgmt-core==1.4.0
-azure-mgmt-storage==21.0.0
 azure-storage-blob==12.16.0
 backports.zoneinfo==0.2.1
 boto3==1.26.131
