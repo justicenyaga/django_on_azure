@@ -18,3 +18,11 @@ def getStream(request, pk):
     stream = Stream.objects.get(_id=pk)
     serializer = StreamSerializer(stream, many=False)
     return Response(serializer.data)
+
+
+@api_view(['POST'])
+def createStream(request):
+    data = request.data
+    stream = Stream.objects.create(name=data['name'])
+    serializer = StreamSerializer(stream, many=False)
+    return Response(serializer.data)
